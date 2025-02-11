@@ -1,5 +1,7 @@
 package Class
 
+import android.graphics.Insets.add
+
 class variable {
 }//
 
@@ -12,10 +14,50 @@ class variable {
 
     // String variables
     val gender: Char = 'M'
-    val name: String = "Ricardo"
+    val name: String = "Humberto Martin"
 
     // Bool variables
     val isGreater: Boolean = false
 
+    // Collection variables
+    val names = arrayOf("Josue", "Ana", "Victoria", "Sebas")
 
+    println(age)
+    println("Welcome $name, to your first Kotlin Project")
+    println(add())
+    println(product(5, 8))
+
+    printArray(names)
+
+    val numbers = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    isEven(numbers)
+
+ }
+
+fun add(): Int {
+   val x = 18
+   val y = 8
+   return (x + y)
 }
+
+fun product(x: Int, y: Int): Int {
+   return (x * y)
+}
+
+fun printArray(names: Array<String>) {
+   for (name in names) {
+      println("Hello $name")
+   }
+}
+
+fun isEven(numbers: Array<Int>) {
+   for (number in numbers) {
+      if (number % 2 == 0) {
+         println("The number $number is even")
+      } else {
+         println("The number $number is odd")
+      }
+   }
+}
+
+
