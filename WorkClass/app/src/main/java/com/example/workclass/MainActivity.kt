@@ -26,44 +26,22 @@ class MainActivity : ComponentActivity() {
                         Text(text = "Hello Word!")
                         Text(text = "Welcome to your first application")
                     }
-                    Row() {
+                    Column() {
                         Text(text = "Hello Word!")
                         Text(text = "Welcome to your first application")
 
                     }
-                    Row(){
+                    Column(){
                         Text(text = "Hello Word!")
                         Text(text = "Welcome to your first application")
                     }
+                    Column(){
+                        Text(text = "Hello Word")
+                        Text(text = "the frist application")
+                    }
                 }
-
-
-                /*Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-
-                 */
             }
         }
     }
 }
-/*
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Work__ClassTheme {
-        Greeting("Android")
-    }
-}
-*/
