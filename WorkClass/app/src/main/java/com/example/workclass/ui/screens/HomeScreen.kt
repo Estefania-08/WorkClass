@@ -74,10 +74,11 @@ fun Content1(){
             contentScale = ContentScale.Crop
         )
         Text(
-            stringResource(R.string.ipsum_text),
-            textAling = TextAlign.Justify,
+            text = stringResource(R.string.ipsum_text),
+            textAlign = TextAlign.Justify,
             lineHeight = 18.sp,
             modifier = Modifier.padding(10.dp)
+
         )
     }
 }
@@ -104,6 +105,7 @@ fun Content2(){
             )
             Column(
 
+
             ){
                 Text(
                     text = "This is a title",
@@ -113,8 +115,8 @@ fun Content2(){
                         .padding(5.dp)
                 )
                 Text(
-                    stringResource(R.string.ipsum_text),
-                    textAlgin = TextAlign.Justify,
+                    text = stringResource(R.string.ipsum_text),
+                    textAlign = TextAlign.Justify,
                     lineHeight = 14.sp
                 )
             }
